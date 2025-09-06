@@ -1,0 +1,21 @@
+{
+    "settings": {
+        "delaySeconds": 10,
+        "silent": false,
+        "logFile": "nvidia-replay-autostart.log",
+        "retryAttempts": 3,
+        "retryDelay": 5
+    },
+    "paths": {
+        "geforceExperience": "%ProgramFiles%\\NVIDIA Corporation\\NVIDIA GeForce Experience\\NVIDIA GeForce Experience.exe",
+        "alternativeGeforceExperience": "%ProgramFiles(x86)%\\NVIDIA Corporation\\NVIDIA GeForce Experience\\NVIDIA GeForce Experience.exe"
+    },
+    "methods": {
+        "enableReplay": {
+            "primary": "registry",
+            "fallback": "automation",
+            "useKeyboardShortcut": true,
+            "shortcutKey": "Alt+Z"
+        }
+    }
+}
